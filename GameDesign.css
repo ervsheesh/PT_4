@@ -1,0 +1,93 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('autumn.jpeg') no-repeat center center fixed; /* Set background image */
+    background-size: cover; /* Make sure the background covers the entire page */
+    color: #FFF8DC; /* Light, warm color (Cornsilk) for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, header p {
+    text-align: center;
+    text-shadow: 0 0 5px #000000, 0 0 10px #000000; /* Black shadow for better text visibility */
+    font-size: 1.5em;
+    color: #FFF8DC; /* Light, warm color */
+}
+
+/* Game container layout */
+.gameContainer {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.draggableContainer, .droppableContainer, .unjumbleContainer {
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(45, 25, 23, 0.8); /* Slightly transparent brown */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(250, 160, 30, 0.4); /* Soft yellow glow */
+}
+
+/* Box styling for draggable, unjumble, and droppable elements */
+.box, .droppable, .unjumbleBox {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF8DC; /* Light, warm color */
+    background: #D87C3E; /* Warm orange */
+    border: 2px dashed #F1C27D; /* Light cream border */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.2s;
+}
+
+.box:hover, .droppable:hover, .unjumbleBox:hover {
+    transform: scale(1.05);
+}
+
+/* Highlighted styling for correct and incorrect drops */
+.correct {
+    color: #FFF8DC; /* Light cream */
+    background: #6B8E23; /* Olive green */
+    border-color: #FFF8DC;
+}
+
+.incorrect {
+    color: #FFF8DC;
+    background: #8B0000; /* Dark red */
+}
+
+/* Scoreboard styling */
+.scoreboard {
+    margin-top: 15px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #FFF8DC; /* Light cream */
+}
+
+.resetButton {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #8B0000; /* Dark red */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.resetButton:hover {
+    background: #600000; /* Darker red */
+}

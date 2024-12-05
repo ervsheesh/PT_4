@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Game</title>
+    <link rel="stylesheet" href="GameDesign.css">
+    <script src="GameScript.js" defer></script>
+</head>
+<body>
+    <!-- Game Header: Contains title and brief instructions -->
+    <header>
+        <h1>Word Puzzle Game</h1>
+        <p>Drag the jumbled words to the middle box to unjumble them, then match with their correct plural form!</p>
+    </header>
+
+    <!-- Main Game Container: Holds all game elements -->
+    <div class="gameContainer">
+        <div class="draggableContainer" id="jumbledWords"></div>
+        
+        <div class="unjumbleContainer">
+            <!-- Unjumble Box: Drop zone to reveal original word -->
+            <div class="unjumbleBox" id="unjumbleBox">Drop here to unjumble</div>
+        </div>
+        
+        <div class="droppableContainer" id="targetWords"></div>
+    </div>
+
+    <!-- Scoreboard: Displays game status and score -->
+    <div class="scoreboard">
+        <p id="remarks">Status: </p>
+        <p id="scores">Score: 0</p>
+    </div>
+
+    <!-- Reset Button: Resets the game state -->
+    <button class="resetButton" onclick="resetGame()">Reset Game</button>
+</body>
+</html>
